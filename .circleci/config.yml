@@ -22,7 +22,7 @@ jobs:
 
     - run:
         name: Build
-        command: ./gradlew clean check build assembleAndroidTest
+        command: ./gradlew clean check build assemble assembleAndroidTest
 
     - run:
         name: Stability Test
