@@ -24,6 +24,10 @@ jobs:
         name: Build
         command: ./gradlew clean check build assembleAndroidTest
 
+    - run:
+        name: Stability Test
+        command: ./gradlew clean assembleRelease
+
     - save_cache:
         paths:
         - ~/.gradle
